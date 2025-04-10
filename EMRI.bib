@@ -120,6 +120,7 @@
   primaryclass  = {gr-qc},
 }
 
+{PanossoMacedo2022,
   author        = {Panosso Macedo, Rodrigo and Leather, Benjamin and Warburton, Niels and Wardell, Barry and Zengino\u{g}lu, An\i{}l},
   journal       = {Phys. Rev. D},
   title         = {{Hyperboloidal method for frequency-domain self-force calculations}},
@@ -412,6 +413,29 @@
   file          = {:Vishal2024 - Toward Exponentially Convergent Simulations of Extreme Mass Ratio Inspirals_ a Time Domain Solver for the Scalar Teukolsky Equation with Singular Source Terms.pdf:PDF:http\://arxiv.org/pdf/2307.01349},
   groups        = {Self Force},
   primaryclass  = {gr-qc},
+}
+
+@Article{Macedo2022,
+  author        = {Macedo, Rodrigo Panosso and Leather, Benjamin and Warburton, Niels and Wardell, Barry and Zenginoğlu, Anıl},
+  journal       = {Phys. Rev. D 105, 104033 (2022)},
+  title         = {Hyperboloidal method for frequency-domain self-force calculations},
+  year          = {2022},
+  issn          = {2470-0029},
+  month         = may,
+  number        = {10},
+  pages         = {104033},
+  volume        = {105},
+  abstract      = {Gravitational self-force theory is the leading approach for modeling gravitational wave emission from small mass-ratio compact binaries. This method perturbatively expands the metric of the binary in powers of the mass ratio. The source for the perturbations depends on the orbital configuration, calculational approach, and the order of the perturbative expansion. These sources fall into three broad classes: (i) distributional, (ii) worldtube, and (iii) unbounded support. The latter, in particular, is important for emerging second-order (in the mass ratio) calculations. Traditional frequency domain approaches employ the variation of parameters method and compute the perturbation on standard time slices with numerical boundary conditions supplied at finite radius from series expansions of the asymptotic behavior. This approach has been very successful, but the boundary conditions calculations are tedious, and the approach is not well suited to unbounded sources where homogeneous solutions must be computed at all radii. This work develops an alternative approach where hyperboloidal slices foliate the spacetime, and compactifying coordinates simplify the boundary treatment. We implement this approach with a multi-domain spectral solver with analytic mesh refinement and use the scalar-field self-force on circular orbits around a Schwarzschild black hole as an example problem. The method works efficiently for all three source classes encountered in self-force calculations and has distinct advantages over the traditional approach. For example, our code efficiently computes the perturbation for orbits with extremely large orbital radii ($r_{p}>10^5M$) or modes with very high spherical harmonic mode index ($\ell \ge 100$). Our results indicate that hyperboloidal methods can play an essential role in self-force calculations.},
+  archiveprefix = {arXiv},
+  copyright     = {arXiv.org perpetual, non-exclusive license},
+  date          = {2022-02-03},
+  doi           = {10.1103/physrevd.105.104033},
+  eprint        = {2202.01794},
+  file          = {:PanossoMacedo2022 - Hyperboloidal Method for Frequency Domain Self Force Calculations.pdf:PDF},
+  groups        = {Self Force},
+  keywords      = {General Relativity and Quantum Cosmology (gr-qc), FOS: Physical sciences},
+  primaryclass  = {gr-qc},
+  publisher     = {American Physical Society (APS)},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
